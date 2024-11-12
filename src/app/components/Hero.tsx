@@ -1,4 +1,3 @@
-/* eslint disables */
 import Image from "next/image";
 
 export default function Component() {
