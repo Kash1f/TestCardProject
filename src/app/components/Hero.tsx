@@ -2,32 +2,36 @@ import Image from "next/image";
 
 export default function Component() {
   return (
-    <div className="bg-white p-6 md:p-12 relative">
+    <div className="bg-white p-16 md:p-12 relative">
       <div className="mx-auto max-w-7xl grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
         {/* Left Section */}
 
-        <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/3">
+        <div className="absolute w-[30%] h-[222%] left-[12%]">
           <Image
             src="/vec2.png"
             alt="Person wearing a sweater"
-            // layout="fill"
-            objectFit="cover"
             layout="fill"
-            className="opacity-100 object-cover"
+            objectFit="cover"
+            className="opacity-100"
           />
+        </div>
 
-          <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
-            Start making money from your returns.
+        <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/4">
+          <h1 className="text-5xl font-bold text-transparent p-2 bg-clip-text bg-gradient-to-b from-purple-600 to-indigo-950">
+            Start making money <br></br>from your returns.
           </h1>
-          <p className="text-md text-indigo-700">
+          <p className="text-md text-indigo-900">
             Built for Shopify merchants of all sizes.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="bg-indigo-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 flex items-center">
-              <img
-                src="Full color.png" // Ensure the path is correct based on your folder structure
+              <Image
+                src="/Fullcolor.png" 
+                layout="intrinsic"
+                width={20}
+                height={20}
                 alt="Shopify logo"
-                className="w-4 h-4 mr-2" // Adjust size and margin as needed
+                className="w-4 h-4 mr-2"
               />
               Install app now
             </button>
@@ -45,19 +49,20 @@ export default function Component() {
             <span className="text-purple-500 text-2xl">$</span>
           </div> */}
           {/* Main card with image */}
-          <div className="relative bg-white shadow-2xl overflow-hidden w-80 md:w-72 lg:w-72 lg:h-[26rem]">
+          <div className="relative bg-white w-80 h-[26rem] md:w-72 lg:w-72 lg:h-[24rem] rounded-xl">
             <Image
               src="/image.png"
               alt="Person wearing a sweater"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              width={320} 
+              height={430}
+              className="object-cover rounded-lg h-full w-full" 
             />
           </div>
+
           {/* Overlapping product details card */}
-          <div className="absolute top-[26%] right-[28%] bg-white shadow-2xl rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12 opacity-100">
+          <div className="absolute top-[27%] right-[28%] bg-white shadow-2xl rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12 opacity-100">
             <div className="space-y-8">
-              <h2 className="text-lg md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
+              <h2 className="text-lg md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-indigo-950">
                 Sweater in Everyday Cotton
               </h2>
               <p className="text-gray-600 text-xs leading-relaxed">
