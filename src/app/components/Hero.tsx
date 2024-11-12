@@ -4,18 +4,18 @@ export default function Component() {
   return (
     <div className="bg-white p-6 md:p-12 relative">
       <div className="mx-auto max-w-7xl grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
-
         {/* Left Section */}
-        <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/3">
-        <Image
-           src="/vec2.png"
-           alt="Person wearing a sweater"
-           layout="fill"
-           objectFit="cover"
 
-           
-           className=""
-        />
+        <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/3">
+          <Image
+            src="/vec2.png"
+            alt="Person wearing a sweater"
+            // layout="fill"
+            objectFit="cover"
+            layout="fill"
+            className="opacity-100 object-cover"
+          />
+
           <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
             Start making money from your returns.
           </h1>
@@ -23,7 +23,7 @@ export default function Component() {
             Built for Shopify merchants of all sizes.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-purple-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 flex items-center">
+            <button className="bg-indigo-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 flex items-center">
               <img
                 src="Full color.png" // Ensure the path is correct based on your folder structure
                 alt="Shopify logo"
@@ -55,7 +55,7 @@ export default function Component() {
             />
           </div>
           {/* Overlapping product details card */}
-          <div className="absolute top-[26%] right-[28%] bg-white shadow-2xl rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12">
+          <div className="absolute top-[26%] right-[28%] bg-white shadow-2xl rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12 opacity-100">
             <div className="space-y-8">
               <h2 className="text-lg md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
                 Sweater in Everyday Cotton
@@ -77,7 +77,7 @@ export default function Component() {
                   <button className="w-5 h-5 rounded-full bg-slate-700"></button>
                 </div>
               </div>
-              <button className="w-full bg-purple-700 text-white py-2 rounded-full text-base font-semibold transition-colors duration-200">
+              <button className="w-full bg-purple-950 text-white py-2 rounded-full text-base font-semibold transition-colors duration-200">
                 Add to Cart | $40
               </button>
             </div>
@@ -91,7 +91,7 @@ export default function Component() {
         alt="Dollar sign"
         width={25}
         height={25}
-        className="absolute left-[57%] bottom-[-30%] opacity-100"
+        className="absolute left-[56%] bottom-[-28%] opacity-100"
       />
       <Image
         src="/vec1.png"
