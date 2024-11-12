@@ -64,6 +64,7 @@ export default function Component() {
               </div>
               <button className="w-full bg-purple-700 text-white py-2 rounded-full text-base font-semibold transition-colors duration-200">
                 Add to Cart | $40
+                
               </button>
             </div>
           </div>

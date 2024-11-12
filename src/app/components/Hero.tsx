@@ -24,15 +24,15 @@ export default function Component() {
         {/* Right Section */}
         <div className="relative flex items-center">
           {/* Background decorative elements */}
-          <div className="absolute -z-10 -right-6 bottom-10 flex flex-col gap-4 transform">
+          {/* <div className="absolute -z-10 -right-6 bottom-10 flex flex-col gap-4 transform">
             <div className="w-16 h-16 bg-purple-200 rounded-md"></div>
             <div className="w-20 h-20 bg-purple-100 rounded-md"></div>
             <span className="text-purple-500 text-2xl">$</span>
-          </div>
+          </div> */}
           {/* Main card with image */}
-          <div className="relative bg-white shadow-xl rounded-lg overflow-hidden w-60 md:w-72 lg:w-70 h-80 lg:h-[22rem]">
+          <div className="relative bg-white shadow-2xl overflow-hidden w-80 md:w-72 lg:w-72 lg:h-[26rem]">
             <Image
-              src="/cruise.webp"
+              src="/image.png"
               alt="Person wearing a sweater"
               layout="fill"
               objectFit="cover"
@@ -40,8 +40,8 @@ export default function Component() {
             />
           </div>
           {/* Overlapping product details card */}
-          <div className="absolute top-[40%] right-[22%] bg-white shadow-lg rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12">
-            <div className="space-y-4">
+          <div className="absolute top-[26%] right-[28%] bg-white shadow-2xl rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12">
+            <div className="space-y-8">
               <h2 className="text-lg md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
                 Sweater in Everyday Cotton
               </h2>
@@ -74,30 +74,30 @@ export default function Component() {
       <Image
         src="/Vector.png"
         alt="Dollar sign"
-        width={32}
-        height={32}
-        className="absolute bottom-32 left-[60%] opacity-100"
+        width={25}
+        height={25}
+        className="absolute left-[57%] bottom-[-30%] opacity-100"
       />
       <Image
         src="/vec1.png"
         alt="Dollar sign"
-        width={24}
-        height={24}
-        className="absolute top-[] left-[40%] opacity-100"
+        width={16}
+        height={16}
+        className="absolute left-[52%] bottom-[-9%] opacity-100"
       />
       <Image
         src="/box2.png"
         alt="Purple box"
-        width={100}
-        height={100}
+        width={90}
+        height={90}
         className="absolute top-[100%] right-[40%] opacity-100"
       />
       <Image
         src="/box1.png"
         alt="Light purple box"
-        width={40}
-        height={40}
-        className="absolute top-[] right-[45%] opacity-100"
+        width={60}
+        height={60}
+        className="absolute right-[44%] bottom-[-25%] opacity-100"
       />
     </div>
   );
