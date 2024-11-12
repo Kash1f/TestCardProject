@@ -1,21 +1,22 @@
 import Image from "next/image";
+
 export default function Component() {
   return (
-    <div className="bg-white p-6 md:p-12">
+    <div className="bg-white p-6 md:p-12 relative">
       <div className="mx-auto max-w-7xl grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
         {/* Left Section */}
-        <div className="space-y-6 lg:space-y-8 mt-48 pb-2">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-purple-700 lg:leading-snug">
+        <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/3">
+          <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
             Start making money from your returns.
           </h1>
-          <p className="text-md text-gray-600">
+          <p className="text-md text-indigo-700">
             Built for Shopify merchants of all sizes.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="bg-purple-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200">
               🚀 Install app now
             </button>
-            <button className="bg-white hover:bg-gray-50 text-gray-800 rounded-full px-6 py-3 text-sm font-semibold border border-gray-300 transition-colors duration-200 flex items-center gap-2">
+            <button className="bg-white hover:bg-gray-50 text-gray-800 rounded-full px-6 py-2 text-sm font-semibold border border-gray-300 transition-colors duration-200 flex items-center gap-2">
               💎 Built for Shopify
             </button>
           </div>
@@ -35,13 +36,13 @@ export default function Component() {
               alt="Person wearing a sweater"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-lg" 
             />
           </div>
           {/* Overlapping product details card */}
           <div className="absolute top-[40%] right-[22%] bg-white shadow-lg rounded-xl p-6 max-w-xs transform translate-x-8 lg:translate-x-12">
             <div className="space-y-4">
-              <h2 className="text-lg md:text-2xl font-semibold text-purple-700">
+              <h2 className="text-lg md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
                 Sweater in Everyday Cotton
               </h2>
               <p className="text-gray-600 text-xs leading-relaxed">
@@ -69,35 +70,34 @@ export default function Component() {
         </div>
       </div>
 
-      {/* Added floating dollar signs */}
-
+      {/* Floating elements positioned to match the design */}
       <Image
         src="/Vector.png"
         alt="Dollar sign"
         width={32}
         height={32}
-        className="absolute bottom-10 left-1/2 opacity-100 top-3/4"
+        className="absolute bottom-32 left-[60%] opacity-100"
       />
       <Image
         src="/vec1.png"
         alt="Dollar sign"
         width={24}
         height={24}
-        className="absolute top-1/2 left-1/2 opacity-100"
+        className="absolute top-[] left-[40%] opacity-100"
       />
       <Image
         src="/box2.png"
-        alt="Dollar sign"
+        alt="Purple box"
         width={100}
         height={100}
-        className="absolute top-1/2 right-1/2.8 opacity-100"
+        className="absolute top-[100%] right-[40%] opacity-100"
       />
       <Image
         src="/box1.png"
-        alt="Dollar sign"
+        alt="Light purple box"
         width={40}
         height={40}
-        className="absolute top-1/2 right-1/2 opacity-100"
+        className="absolute top-[] right-[45%] opacity-100"
       />
     </div>
   );
