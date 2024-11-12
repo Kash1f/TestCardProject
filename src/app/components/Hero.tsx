@@ -4,8 +4,18 @@ export default function Component() {
   return (
     <div className="bg-white p-6 md:p-12 relative">
       <div className="mx-auto max-w-7xl grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
+
         {/* Left Section */}
         <div className="space-y-8 lg:space-y-8 mt-60 relative right-24 -left-1/3">
+        <Image
+           src="/vec2.png"
+           alt="Person wearing a sweater"
+           layout="fill"
+           objectFit="cover"
+
+           
+           className=""
+        />
           <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-600 to-purple-950">
             Start making money from your returns.
           </h1>
@@ -13,11 +23,16 @@ export default function Component() {
             Built for Shopify merchants of all sizes.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-purple-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200">
-              🚀 Install app now
+            <button className="bg-purple-700 text-white rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 flex items-center">
+              <img
+                src="Full color.png" // Ensure the path is correct based on your folder structure
+                alt="Shopify logo"
+                className="w-4 h-4 mr-2" // Adjust size and margin as needed
+              />
+              Install app now
             </button>
-            <button className="bg-white hover:bg-gray-50 text-gray-800 rounded-full px-6 py-2 text-sm font-semibold border border-gray-300 transition-colors duration-200 flex items-center gap-2">
-              💎 Built for Shopify
+            <button className="bg-blue-100 text-[#1a1a1a] rounded-lg text-sm font-bold inline-flex items-center w-30 h-6 mt-3 p-1">
+              💎Built for Shopify
             </button>
           </div>
         </div>
@@ -36,7 +51,7 @@ export default function Component() {
               alt="Person wearing a sweater"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg" 
+              className="rounded-lg"
             />
           </div>
           {/* Overlapping product details card */}
@@ -90,14 +105,14 @@ export default function Component() {
         alt="Purple box"
         width={90}
         height={90}
-        className="absolute top-[100%] right-[40%] opacity-100"
+        className="absolute top-[100%] right-[41%] opacity-100"
       />
       <Image
         src="/box1.png"
         alt="Light purple box"
         width={60}
         height={60}
-        className="absolute right-[44%] bottom-[-25%] opacity-100"
+        className="absolute right-[45%] bottom-[-24%] opacity-100"
       />
     </div>
   );
