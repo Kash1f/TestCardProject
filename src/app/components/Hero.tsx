@@ -69,7 +69,7 @@ export default function Component() {
                 The perfect boxy-fit sweater, The Boxy Sweater in Everyday
                 Cotton is a layering essential. Featuring a chunky rib stitch at
                 the crew neckline, along the hem, and sleeve cuffs, it has
-                dropped shoulders for a relaxed edge. Its made with 100%
+                dropped shoulders for a relaxed edge. It is made with 100%
                 organic cotton, and designed to be styled solo or easily topped
                 with a blazer or cardigan.
               </p>
